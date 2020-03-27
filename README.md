@@ -62,4 +62,4 @@ Here at [GitLab](https://lab.tik.co/explore/projects)
 
 ## License
 
-This project is licensed under the MIT License - see [the LICENSE file](LICENSE.md) for details.
+This project is licensed under the MIT License - see [the LICENSE file](LICENSE) for details.
