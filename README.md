@@ -48,7 +48,7 @@ To start with the project follow these steps:
 
 ## Checkout all of our projects
 
-Here at [GitLab](https://lab.tik.co/explore/projects)
+Here at [Phoenix](https://lab.tik.co/explore/projects)
 
 
 
