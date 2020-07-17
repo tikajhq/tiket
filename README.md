@@ -56,7 +56,7 @@ Here at [Phoenix](https://lab.tik.co/explore/projects)
 
 - [Madhurendra Sachan](https://github.com/m301)
 - [Deeksha Gupta](https://github.com/eksha)
-- [Mansoor Ahmad](https://github.com/mansoorahmad69)
+- [Mansoor Ahmad](https://github.com/M33P0)
 
 
 
