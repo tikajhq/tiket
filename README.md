@@ -13,6 +13,15 @@
 
 ![screen-2-100](assets/readme/screen.jpg)
 
+## Features
+- [x] Separate User Access Roles (Admin, Agent, User)
+- [x] Automatically create Tickets by sending email
+- [x] Reply to ticket thread by replying on associated email thread
+- [x] Attachments in tickets as well as thread replies supported
+- [x] Rich text editors supported
+- [x] Ticket audit activity logged in thread - who performed what action and when
+- [x] Informative dashboard reporting
+
 ## Prerequisites for this project
 1. php v7.x.x
 2. phpMyAdmin
