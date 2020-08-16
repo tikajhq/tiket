@@ -1,7 +1,8 @@
 ![Thumbnail-100](assets/readme/thumbnail.jpg)
 
-<div align="center"><a href="https://demo.tiket.mg.tik.co/">Visit TIKAJ HELPDESK live demo</a></div>
+## Demo
 
+<div align="center"><a href="https://demo.tiket.mg.tik.co/">Visit TIKAJ HELPDESK live demo</a></div>
 
 ### Credentials for logging in
 
@@ -35,15 +36,19 @@ To start with the project follow these steps:
 
 2. Import `tiket_demo.sql` present in root directory
 
-3. Do the required changes in your `Database.php`
+3. Run `composer install` in root directory
 
-4. Type this in your terminal `php -S localhost:8080` _(Can be modified from `application/config/client.config.php`)_
+4. Run `cp application/config/client.sample.config.php application/config/client.config.php` _(Copy application/config/client.sample.config.php to application/config/client.config.php)_
 
-5. To Change email settings and stuff like that your can change the values in constants defined in `application/config/client.config.php`
+5. Do the required changes in your `application/config/database.php`
 
-6. To Change name of the product you can change the values in constants defined in `application/config/config.product.php`
+6. Type this in your terminal `php -S localhost:8080` _(Can be modified from `application/config/client.config.php`)_
 
-7. Now you can login using these credentials
+7. To Change email settings and stuff like that your can change the values in constants defined in `application/config/client.config.php`
+
+8. To Change name of the product you can change the values in constants defined in `application/config/config.product.php`
+
+9. Now you can login using these credentials
 
    
 |User type | Username | Password |
@@ -86,3 +91,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+Developed with :heart: at [TIKAJ](https://www.tikaj.com) 
