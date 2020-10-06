@@ -17,9 +17,11 @@
                             <div class="pr-2">
                                 <?PHP
                                 $tik_attachments = '';
-                                $tik_attached = json_decode($info['data'], true)['attachments'];
-                                if ($tik_attached)
-                                    foreach (json_decode($info['data'], true)['attachments'] as $tik_attachment) {
+                                $decoded = json_decode($info['data'], true);
+                                if($decoded)
+                                    $tik_attached = $decoded['attachments'];
+                                if ($decoded && $tik_attached)
+                                    foreach ($decoded['attachments'] as $tik_attachment) {
                                         $tik_attachments = $tik_attachments . '<p><span class="attachment" data-filename="' . $tik_attachment['file_name'] . '" data-filepath="' . base_url() . $tik_attachment['path'] . '"></p>';
                                     }
                                 ?>
@@ -34,9 +36,11 @@
                         <ul id="comments-list" class="comments-list">
                             <?PHP foreach ($messages as $message) {
                                 $attachments = '';
-                                $attached = json_decode($message['data'], true)['attachments'];
-                                if ($attached)
-                                    foreach (json_decode($message['data'], true)['attachments'] as $attachment) {
+                                $decoded = json_decode($message['data'], true);
+                                if($decoded)
+                                $attached = $decoded['attachments'];
+                                if ($decoded && $attached)
+                                    foreach ($decoded['attachments'] as $attachment) {
                                         $attachments = $attachments . '<p><span class="attachment" data-filename="' . $attachment['file_name'] . '" data-filepath="' . base_url() . $attachment['path'] . '"></p>';
                                     }
                                 if ($message['type'] == 1)
