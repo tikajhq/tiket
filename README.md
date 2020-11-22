@@ -2,7 +2,7 @@
 
 ## Demo
 
-<div align="center"><a href="https://demo.tiket.mg.tik.co/">Visit TIKAJ HELPDESK live demo</a></div>
+<div align="center"><a href="https://tiket.app.tik.co/">Visit TIKAJ HELPDESK live demo</a></div>
 
 ### Credentials for logging in
 
