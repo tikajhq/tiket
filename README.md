@@ -36,9 +36,9 @@ To start with the project follow these steps:
 
 2. Import `tiket_demo.sql` present in root directory
 
-3. Run `composer install` in root directory
+3. Run `composer install --no-dev --no-security-blocking` in root directory. This installs runtime dependencies only; the declared development-only PHPUnit versions are blocked by current Composer security checks.
 
-4. Run `cp application/config/client.sample.config.php application/config/client.config.php` _(Copy application/config/client.sample.config.php to application/config/client.config.php)_
+4. Run `cp application/config/client.config.sample.php application/config/client.config.php` _(Copy application/config/client.config.sample.php to application/config/client.config.php)_
 
 5. Do the required changes in your `application/config/database.php`
 
@@ -59,6 +59,16 @@ To start with the project follow these steps:
 7. All done! You can enjoy now!
 
    
+
+### MCP server for VS Code
+
+The project-local MCP server provides read-only ticket search and ticket/conversation lookups. It is isolated from the legacy web app and requires PHP 8.1 or later.
+
+1. Run `composer install` from the `mcp` directory.
+2. Start the server from the repository root with `php mcp/server.php`.
+3. Keep the server running on `127.0.0.1:8082`; VS Code loads its connection from `.vscode/mcp.json`.
+
+The MCP endpoint is bound to loopback and has no authentication. Do not expose it to a network; connected agents can read ticket contents.
 
 ## Checkout all of our projects
 

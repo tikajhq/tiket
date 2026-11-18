@@ -1,0 +1,11 @@
+{
+    "name": "tikaj/tiket-mcp-server",
+    "description": "Read-only MCP server for the TIKAJ Helpdesk",
+    "type": "project",
+    "license": "Apache-2.0",
+    "require": {
+        "ext-pdo_mysql": "*",
+        "php": "^8.1",
+        "php-mcp/server": "^3.3"
+    }
+}
