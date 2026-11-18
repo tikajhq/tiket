@@ -9,12 +9,15 @@ application/logs/*
 !application/*/.htaccess
 
 composer.lock
+!mcp/composer.lock
+mcp/vendor/
 
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 /vendor/
+application/config/client.config.php
 
 # IDE Files
 #-------------------------
